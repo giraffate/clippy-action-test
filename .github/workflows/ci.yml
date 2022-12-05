@@ -10,7 +10,7 @@ jobs:
     - uses: dtolnay/rust-toolchain@nightly
       with:
         components: clippy
-    - uses: giraffate/clippy-action@v1
+    - uses: giraffate/clippy-action@suppress_logs
       with:
-        reporter: 'github-pr-review'
+        reporter: 'github-pr-check'
         github_token: ${{ secrets.GITHUB_TOKEN }}
