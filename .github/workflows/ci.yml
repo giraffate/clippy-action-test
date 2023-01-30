@@ -13,4 +13,4 @@ jobs:
     - uses: giraffate/clippy-action@suppress_logs
       with:
         reporter: 'github-pr-check'
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        # github_token: ${{ secrets.GITHUB_TOKEN }}
